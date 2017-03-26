@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation = "vertical"
+    android:background = "#FFFFFF">
+
+    <ImageView
+        android:layout_width = "match_parent"
+        android:layout_height = "0.3dp"
+        android:layout_alignParentTop = "true"
+        android:background = "#9DC0E6"/>
+
+    <RadioGroup
+        android:id="@+id/main_bottom_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/main_bt_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:paddingTop = "7dp"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/main_bottom_home_selector"
+            android:gravity="center"
+            android:text="@string/main_bt_home_text"
+            android:textColor="@drawable/main_bottom_text_selector"
+            android:textSize="11sp"/>
+
+        <RadioButton
+            android:id="@+id/main_bt_order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:paddingTop = "7dp"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/main_bottom_order_selector"
+            android:gravity="center"
+            android:text="@string/main_bt_order_text"
+            android:textColor="@drawable/main_bottom_text_selector"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:id="@+id/main_bt_information"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:paddingTop = "7dp"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/main_bottom_information_selector"
+            android:gravity="center"
+            android:text="@string/main_bt_information_text"
+            android:textColor="@drawable/main_bottom_text_selector"
+            android:textSize="11sp" />
+
+    </RadioGroup>
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="80dp">
+
+            <TextView
+                android:id="@+id/Login2Activity_ID"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="17dip"
+                android:gravity="left"
+                android:text="账号"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/Login2Activity_ID_Text"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:drawable/edit_text"
+                android:maxLength = "25"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="130dp">
+
+            <TextView
+                android:id="@+id/Login2Activity_Password"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="17dip"
+                android:gravity="left"
+                android:text="密码"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/Login2Activity_Password_Text"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:drawable/edit_text"
+                android:maxLength = "16"
+                android:password="true"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/Login2Activity_Froget_Password"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft = "260dp"
+            android:layout_marginTop="180dip"
+            android:text="修改密码"
+            android:textColor="#0000ff"
+            android:autoLink="all"
+            android:textSize="13dp" />
+
+        <Button
+            android:id="@+id/Login2Activity_SignIn_Button"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dip"
+            android:layout_marginRight="30dip"
+            android:layout_marginTop="200dip"
+            android:text="注册" />
+
+        <Button
+            android:id="@+id/Login2Activity_Login_Button"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="250dip"
+            android:layout_marginRight="30dip"
+            android:layout_marginTop="200dip"
+            android:text="登陆" />
+    </RelativeLayout>
+</LinearLayout>
