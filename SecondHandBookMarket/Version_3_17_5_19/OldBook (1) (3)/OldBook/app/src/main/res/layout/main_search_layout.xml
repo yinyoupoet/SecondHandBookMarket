@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.oldbook.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background = "#5CA2EA"
+        app:contentInsetStart="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id = "@+id/main_bar_button_location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity = "center"
+                android:layout_weight="2"
+                android:layout_alignParentLeft = "true"
+                android:background=  "@drawable/main_button_selector"
+                android:src = "@drawable/location_image"/>
+
+            <EditText
+                android:id="@+id/main_search_exittext"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="9"
+                android:focusable = "false"
+                android:hint="搜索"
+                android:textColor = "@drawable/colorWhite"
+                android:textColorHint = "@drawable/colorWhite"
+                android:backgroundTint="@drawable/colorWhite"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:id="@+id/main_bar_button_talk"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight = "true"
+                android:layout_weight="2"
+                android:background = "@drawable/main_button_selector"
+                android:src="@drawable/talk_image" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_below="@id/main_toolbar"
+        android:background = "#9DC0E6"/>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--点击按钮时，手指拿起，按钮从放大状态回归初始尺寸的动画；-->
+<scale xmlns:android="http://schemas.android.com/apk/res/android"
+       android:duration="150"
+       android:fillAfter="true"
+       android:fromXScale="1.2"
+       android:fromYScale="1.2"
+       android:pivotX="50%"
+       android:pivotY="50%"
+       android:toXScale="1.0"
+       android:toYScale="1.0"/>

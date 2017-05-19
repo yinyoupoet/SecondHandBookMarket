@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--设置控件不同状态下的形状和颜色-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--android:state_pressed
+       android:state_pressed 控件点击状态，可以为true或false
+       -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorAccent" />
+            <corners android:radius="3dp" />
+        </shape>
+    </item>
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorBackground" />
+            <corners android:radius="3dp" />
+        </shape>
+    </item>
+</selector>

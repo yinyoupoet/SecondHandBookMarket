@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/classifyone">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <LinearLayout
+            android:id="@+id/Arts"
+            android:layout_width="115dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/Engineering"
+            android:layout_alignStart="@+id/Engineering"
+            android:layout_below="@+id/Engineering"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/arts"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Engineering"
+            android:layout_width="115dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/engineering"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Other"
+            android:layout_width="115dp"
+            android:layout_height="60dp"
+            android:background="@drawable/other"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:orientation="horizontal"
+            android:layout_alignTop="@+id/Arts"
+            android:layout_alignLeft="@+id/Science"
+            android:layout_alignStart="@+id/Science">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Science"
+            android:layout_width="115dp"
+            android:layout_height="60dp"
+            android:background="@drawable/science"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:orientation="horizontal"
+            android:layout_alignTop="@+id/Engineering"
+            android:layout_centerHorizontal="true">
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

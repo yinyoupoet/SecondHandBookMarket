@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">校园书易</string>
+    <string name="main_bt_home_text">主页</string>
+    <string name = "main_bt_order_text">订单</string>
+    <string name="main_bt_demand_text">需求</string>
+    <string name="main_bt_information_text">信息</string>
+    <string name = "account">admin1608</string>
+    <string name = "password">1608admin</string>
+</resources>

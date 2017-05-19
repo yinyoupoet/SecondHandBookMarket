@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--当面板视图隐藏时，按钮从屏幕底部退出的动画；translate是一种动画的方式-->
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+           android:duration="150"
+           android:fromYDelta="0%"
+           android:toYDelta="500%"/>

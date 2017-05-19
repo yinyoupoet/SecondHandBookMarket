@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/BookName_Editext"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:drawable/edit_text" />
+
+    <TextView
+        android:id="@+id/BookName_TextView"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="书籍名称"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/BookVersions_Editext"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:drawable/edit_text" />
+
+    <TextView
+        android:id="@+id/BookVersions_TextView"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="版本"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/BookVersions_Editext"
+        android:layout_alignBottom="@+id/BookVersions_Editext"
+        android:layout_alignLeft="@+id/BookName_TextView"
+        android:layout_alignStart="@+id/BookName_TextView" />
+
+    <TextView
+        android:id="@+id/BookClassify_TextView"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:text="所属分类"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:id="@+id/Classify_Spinner"
+        android:layout_marginTop="97dp"
+        android:layout_marginLeft="120dp"
+        android:background="@drawable/selling_books_spinner"
+        />
+
+
+    <EditText
+        android:id="@+id/PublishingCompany_Editext"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="140dp"
+        android:background="@android:drawable/edit_text" />
+
+    <TextView
+        android:id="@+id/PublishingCompany_TextView"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:text="出版社"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/PublishingCompany_Editext"
+        android:layout_alignBottom="@+id/PublishingCompany_Editext"
+        android:layout_alignLeft="@+id/Author_TextView"
+        android:layout_alignStart="@+id/Author_TextView" />
+
+    <EditText
+        android:id="@+id/Author_Editext"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="180dp"
+        android:background="@android:drawable/edit_text" />
+
+    <TextView
+        android:id="@+id/Author_TextView"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="185dp"
+        android:text="作者"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/LocalTion_Editext"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="225dp"
+        android:background="@android:drawable/edit_text" />
+
+    <TextView
+        android:id="@+id/LocalTion_TextView"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="230dp"
+        android:text="当前位置"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/Book_Picture"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="265dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/book"
+        android:maxHeight="200dp"
+        android:maxWidth="200dp" />
+
+    <Button
+        android:id="@+id/Scale_Book"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="480dp"
+        android:text="出售" />
+
+    <Button
+        android:id="@+id/Cancle_Book"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="480dp"
+        android:text="取消" />
+
+
+</RelativeLayout>

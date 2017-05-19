@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#333333">
+   	<ImageView 
+   	    android:id="@+id/back"
+   	    android:layout_width="48dp"
+   	    android:layout_height="48dp"
+   	    android:src="@drawable/back"/>
+   	<TextView 
+   	    android:layout_width="0dp"
+   	    android:layout_weight="1"
+   	    android:layout_height="fill_parent"
+   	    android:gravity="center_vertical"
+   	    android:text="辅助功能"
+   	    android:textColor="#ffffff"
+   	    android:textSize="22sp"
+   	    android:paddingStart="10dp"
+		android:paddingLeft="10dp"/>
+    </LinearLayout>
+   	<LinearLayout android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:layout_marginStart="10dp"
+   	    android:layout_marginEnd="10dp"
+   	    ></LinearLayout>
+	<ListView 
+	    android:id="@+id/list_additional_function"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="10dp"
+	    android:background="@drawable/corner_round"
+	    android:divider="#FCFCFC"
+	    android:dividerHeight="4dp"></ListView>
+</LinearLayout>

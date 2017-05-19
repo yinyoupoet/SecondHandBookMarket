@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:app="http://schemas.android.com/apk/res-auto"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    android:orientation="vertical" >  
+       
+        <LinearLayout 
+            android:id="@+id/my_message"
+            android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="10dp"
+		    android:background="@drawable/corner_round"
+		    android:orientation="horizontal">
+		    <com.example.administrator.oldbook.CircleImageView
+            android:id="@+id/my_picture"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/demo" />
+			<LinearLayout 
+		    	android:layout_width="0dp"
+		   		android:layout_weight="4"
+		    	android:layout_height="fill_parent"
+		    	android:orientation="vertical">
+        		<TextView
+            		android:layout_width="fill_parent"
+            		android:layout_height="0dp"
+            		android:layout_weight="3"
+            		android:gravity="center_vertical"
+            		android:singleLine="true"
+            		android:text="走路带风"
+            		android:textSize="20sp" />
+        		<TextView 
+            		android:layout_width="fill_parent"
+            		android:layout_height="0dp"
+           			android:layout_weight="2"
+            		android:gravity="top"
+            		android:singleLine="true"
+            		android:text="简介：岁月本长，而忙着自促。"
+            		android:textSize="14sp"/>
+			</LinearLayout>
+
+        	<ImageView
+        	    android:layout_width="0dp"
+        	    android:layout_height="40dp"
+        	    android:layout_gravity="center_vertical"
+        	    android:layout_marginEnd="10dp"
+        	    android:layout_weight="1"
+        	    android:src="@drawable/more1" />
+
+        </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/order_manager"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="40dp"
+   	    android:layout_marginTop="1dp"
+   	    android:layout_marginStart="10dp"
+   	    android:layout_marginEnd="10dp"
+   	    android:background="@drawable/corner_top"
+   	    android:orientation="horizontal">
+   	    <TextView
+   	        
+   	        android:layout_width="0dp"
+   	        android:layout_weight="6"
+   	        android:layout_height="fill_parent" 
+   	        android:text="订单管理"
+   	        android:textSize="18sp"
+   	        android:singleLine="true"
+   	        android:gravity="center_vertical"
+   	        android:paddingLeft="10dp"/>
+   	    <ImageView 
+   	        android:layout_width="0dp"
+   	        android:layout_weight="1"
+   	        android:layout_height="15dp"
+   	        android:src="@drawable/more2"
+   	        android:layout_gravity="center_vertical"/>
+   	</LinearLayout>
+   	
+    
+    
+    
+    
+   	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/corner_bottom"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/order_wait_pay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/iv_person_waitpay"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/order_wait_pay"
+                android:layout_marginTop="5dp"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_person_waitpay"
+                android:gravity="center"
+                android:paddingTop="1dp"
+                android:text="待支付"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/order_wait_send"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/iv_person_sendto"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/order_wait_send"
+                android:layout_marginTop="5dp"
+                android:layout_centerInParent="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_person_sendto"
+                android:gravity="center"
+                
+                android:text="待发货"/>
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/order_wait_get"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/iv_person_wait"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/order_wait_get"
+                android:layout_marginTop="5dp"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_person_wait"
+                android:gravity="center"
+                android:text="待收货"/>
+        </RelativeLayout>
+		
+         <RelativeLayout
+            android:id="@+id/order_assess"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/iv_person_alllist"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/order_assess"
+                android:layout_marginTop="5dp"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="评价"
+                android:layout_below="@+id/iv_person_alllist"
+                android:gravity="center"/>
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/order_after_sell"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/iv_person_aftermarket"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/order_after_sell"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_person_aftermarket"
+                android:gravity="center"
+                android:text="退款/售后"/>
+        </RelativeLayout>
+        
+        
+    </LinearLayout>
+    
+   	
+   	
+   	
+   	<LinearLayout 
+   	    android:layout_width="match_parent"
+   	    android:layout_height="40dp"
+   	    android:layout_marginTop="5dp"
+   	    android:layout_marginStart="10dp"
+   	    android:layout_marginEnd="10dp"
+   	    android:background="@drawable/corner_top"
+   	    android:orientation="horizontal">
+   	    <TextView
+   	        android:layout_width="0dp"
+   	        android:layout_weight="6"
+   	        android:layout_height="fill_parent" 
+   	        android:text="我的书籍"
+   	        android:textSize="18sp"
+   	        android:singleLine="true"
+   	        android:gravity="center_vertical"
+   	        android:paddingStart="10dp"/>
+   	    <ImageView 
+   	        android:layout_width="0dp"
+   	        android:layout_weight="1"
+   	        android:layout_height="15dp"
+   	        android:src="@drawable/more2"
+   	        android:layout_gravity="center_vertical"/>
+   	</LinearLayout>
+   	
+   	<LinearLayout 
+   	    android:layout_width="match_parent"
+   	    android:layout_height="40dp"
+   	    android:layout_marginStart="10dp"
+   	    android:layout_marginEnd="10dp"
+   	    android:layout_marginTop="1dp"
+   	    android:background="#ffffff"
+   	    android:orientation="horizontal">
+   	    <TextView
+   	        android:layout_width="0dp"
+   	        android:layout_weight="6"
+   	        android:layout_height="fill_parent" 
+   	        android:text="我的收藏"
+   	        android:textSize="18sp"
+   	        android:singleLine="true"
+   	        android:gravity="center_vertical"
+   	        android:paddingStart="10dp"/>
+   	    <ImageView 
+   	        android:layout_width="0dp"
+   	        android:layout_weight="1"
+   	        android:layout_height="15dp"
+   	        android:src="@drawable/more2"
+   	        android:layout_gravity="center_vertical"/>
+   	</LinearLayout>
+   	<LinearLayout 
+   	    android:layout_width="match_parent"
+   	    android:layout_height="40dp"
+   	    android:layout_marginTop="1dp"
+   	    android:layout_marginStart="10dp"
+   	    android:layout_marginEnd="10dp"
+   	    android:background="@drawable/corner_bottom"
+   	    android:orientation="horizontal">
+   	    <TextView
+   	        android:layout_width="0dp"
+   	        android:layout_weight="6"
+   	        android:layout_height="fill_parent" 
+   	        android:text="我的消息"
+   	        android:textSize="18sp"
+   	        android:singleLine="true"
+   	        android:gravity="center_vertical"
+   	        android:paddingLeft="10dp"/>
+   	    <ImageView 
+   	        android:layout_width="0dp"
+   	        android:layout_weight="1"
+   	        android:layout_height="15dp"
+   	        android:src="@drawable/more2"
+   	        android:layout_gravity="center_vertical"/>
+   	</LinearLayout>
+   	<LinearLayout 
+   	    android:layout_width="match_parent"
+   	    android:layout_height="40dp"
+   	    android:layout_marginTop="15dp"
+   	    android:layout_marginStart="10dp"
+   	    android:layout_marginEnd="10dp"
+   	    android:background="@drawable/corner_top"
+   	    android:orientation="horizontal">
+   	    <TextView
+   	        android:layout_width="0dp"
+   	        android:layout_weight="6"
+   	        android:layout_height="fill_parent" 
+   	        android:text="修改密码"
+   	        android:textSize="18sp"
+   	        android:singleLine="true"
+   	        android:gravity="center_vertical"
+   	        android:paddingLeft="10dp"/>
+   	    <ImageView 
+   	        android:layout_width="0dp"
+   	        android:layout_weight="1"
+   	        android:layout_height="15dp"
+   	        android:src="@drawable/more2"
+   	        android:layout_gravity="center_vertical"/>
+   	</LinearLayout>
+   	
+   	<LinearLayout 
+   	    android:id="@+id/additional_functions"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="40dp"
+   	    android:layout_marginStart="10dp"
+   	    android:layout_marginEnd="10dp"
+   	    android:layout_marginTop="1dp"
+   	    android:background="@drawable/corner_bottom"
+   	    android:orientation="horizontal">
+   	    <TextView
+   	        android:layout_width="0dp"
+   	        android:layout_weight="6"
+   	        android:layout_height="fill_parent" 
+   	        android:text="辅助功能"
+   	        android:textSize="18sp"
+   	        android:singleLine="true"
+   	        android:gravity="center_vertical"
+   	        android:paddingLeft="10dp"/>
+   	    <ImageView 
+   	        android:layout_width="0dp"
+   	        android:layout_weight="1"
+   	        android:layout_height="15dp"
+   	        android:src="@drawable/more2"
+   	        android:layout_gravity="center_vertical"/>
+   	</LinearLayout>
+   	
+   	<Button 
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="40dp"
+   	    android:layout_marginTop="10dp"
+   	    android:layout_gravity="center_horizontal"
+   	    android:gravity="center"
+   	    android:text="注销账号"
+   	    android:textSize="20sp"
+   	   	android:layout_marginStart="10dp"
+   	   	android:layout_marginEnd="10dp"
+   	   	android:background="@drawable/quit_button_shape"/>
+</LinearLayout> 
+

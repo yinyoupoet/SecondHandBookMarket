@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.oldbook.ClassifyActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/classify_search_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background = "@drawable/colorBackground"
+        app:popupTheme = "@style/AlertDialog.AppCompat.Light"
+        app:contentInsetStart="0dp">
+
+        <LinearLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation = "horizontal">
+
+            <ImageButton
+                android:id="@+id/classify_back_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity = "center"
+                android:layout_weight = "2"
+                android:background = "@drawable/main_button_selector"
+                android:src = "@drawable/back_image"/>
+
+            <EditText
+                android:id="@+id/classify_search_edittext"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight = "9"
+                android:textSize = "14sp"
+                android:textColorHint="@drawable/colorWhite"
+                android:textColor="@drawable/colorWhite"
+                android:backgroundTint="@drawable/colorWhite"
+                android:hint="搜索"/>
+
+            <ImageButton
+                android:id="@+id/classify_search_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight = "2"
+                android:background = "@drawable/main_button_selector"
+                android:src = "@drawable/search_image"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_below="@id/classify_search_toolbar"
+        android:background = "#9DC0E6"/>
+
+    <ListView
+        android:id="@+id/Classify_ListView"
+        android:layout_below="@id/classify_search_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</RelativeLayout>

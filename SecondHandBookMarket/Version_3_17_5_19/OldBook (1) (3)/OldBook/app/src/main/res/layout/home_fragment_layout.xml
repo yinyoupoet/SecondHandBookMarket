@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--
+    <TextView
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:gravity = "center"
+        android:text = "Home"
+        android:textSize = "20sp"/> -->
+
+
+
+
+<ScrollView
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation = "vertical">
+
+    <fragment
+        android:id = "@+id/fluentphoto_fragment"
+        android:name = "com.example.administrator.oldbook.FluentPhotoFragment"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        tools:layout="@layout/fluent_photo_layout" />
+
+    <fragment
+        android:id="@+id/fourbutton_fragment"
+        android:name="com.example.administrator.oldbook.FourButtonFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/four_button_layout" />
+
+    <fragment
+        android:id = "@+id/home_order_fragment"
+        android:name = "com.example.administrator.oldbook.OrderFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/order_fragment_layout" />
+
+</LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

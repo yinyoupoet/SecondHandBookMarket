@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#2F4F4F</color>>
+    <drawable name="colorWhite">#FFFFFF</drawable>
+    <drawable name="colorBackground">#5CA2EA</drawable>
+    <color name="colorBackground">#5CA2EA</color>
+    <color name="winbackcol">#ffffff</color>
+    <color name="chat_zhuangtai">#967249</color>
+    <color name="chat_daohang">#BC9F77</color>
+</resources>
